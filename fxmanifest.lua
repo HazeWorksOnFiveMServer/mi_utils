@@ -26,11 +26,13 @@ shared_scripts {
 
 client_scripts {
     '@ox_core/imports/client.lua',
-    'client/aspects/*.lua',
+    'client/aspects/drugs/*.lua',
+    'client/aspects/bombs/*.lua',
+    'client/aspects/misc/*.lua',
+    'client/aspects/vehicle/*.lua',
     'client/utils/*.lua',
     'client/main.lua'
 }
-
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
