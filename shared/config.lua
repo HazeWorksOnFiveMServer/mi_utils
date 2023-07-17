@@ -2,6 +2,8 @@
 CG = {}
 CG.debug = false
 
+CG.radios = true
+
 -- global variables
 Debug = CG.debug
 Target = exports.ox_target
