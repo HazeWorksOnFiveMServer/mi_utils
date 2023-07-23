@@ -6,3 +6,10 @@ Citizen.CreateThread(function()
 		SetVehicleRadioEnabled(vehicle, false)
 	end
 end)
+
+-- remove idle cam
+AddEventHandler('onResourceStart', function()
+	if CG.idle then
+		DisableIdleCamera(true)
+	end
+  end)

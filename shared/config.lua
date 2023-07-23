@@ -1,8 +1,10 @@
 -- config variables
 CG = {}
-CG.debug = false
 
+-- disables vehicle radios
 CG.radios = true
+-- disables player idle cam
+CG.idle = true
 
 -- global variables
 Debug = CG.debug
