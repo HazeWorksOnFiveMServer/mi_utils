@@ -30,3 +30,9 @@ Item.vehicle = {
     clean = true, -- allow use of cleaning item
     cleantime = 25000, -- time of progress bar
 }
+
+Item.divegear = {
+    scuba = true, -- let players swim better
+    time = 150.00, -- sets new time for oxygen level in seconds
+    restrict = false -- allow players to use gear while in water
+}

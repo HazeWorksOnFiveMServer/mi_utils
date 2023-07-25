@@ -3,8 +3,15 @@ CG = {}
 
 -- disables vehicle radios
 CG.radios = true
+
 -- disables player idle cam
 CG.idle = true
+
+-- hides default hud components
+CG.hud = true
+
+-- reduces damage from melee weapons
+CG.dmg = true
 
 -- global variables
 Debug = CG.debug

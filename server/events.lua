@@ -1,4 +1,4 @@
--- server events for items
+-- reference
 RegisterServerEvent('server:vault:open')
 AddEventHandler('server:vault:open', function(choice)
     TriggerClientEvent('openvault', -1, choice)
