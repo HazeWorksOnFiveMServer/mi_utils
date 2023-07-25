@@ -5,10 +5,6 @@ AddEventHandler('onResourceStart', function()
 	end
 end)
 
-local wpnhash = {
-
-}
-
 -- main thread
 Citizen.CreateThread(function()
 	while true do
@@ -47,6 +43,9 @@ Citizen.CreateThread(function()
 			SetWeaponDamageModifier(0x94117305, 0.20) -- poolcue
 			SetWeaponDamageModifier(0x3813FC08, 0.30) -- stone hatched
 			SetWeaponDamageModifier(0x6589186A, 0.20) -- candycane
+		end
+		if CG.water then
+			WaterOverrideSetStrength(0.6)
 		end
 	end
 end)

@@ -26,8 +26,7 @@ shared_scripts {
 
 client_scripts {
     '@ox_core/imports/client.lua',
-    'client/aspects/**/*.lua',
-    'client/utils/*.lua',
+    'client/aspects/*.lua',
     'client/main.lua'
 }
 

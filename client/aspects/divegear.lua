@@ -75,7 +75,7 @@ local systemoff = function()
     end
 end
 
-exports('rebreather', function()
+exports('divegear', function()
     if Item.divegear.restrict then
         if not equip.used then
             if IsPedSwimming(player) or IsPedSwimmingUnderWater(player) then

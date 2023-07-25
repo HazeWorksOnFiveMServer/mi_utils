@@ -1,5 +1,6 @@
 -- config variables
 CG = {}
+CG.debug = true
 
 -- disables vehicle radios
 CG.radios = true
@@ -12,6 +13,9 @@ CG.hud = true
 
 -- reduces damage from melee weapons
 CG.dmg = true
+
+-- calms the waters
+CG.water = true
 
 -- global variables
 Debug = CG.debug
