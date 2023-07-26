@@ -1,5 +1,6 @@
 -- reference
-RegisterServerEvent('server:vault:open')
-AddEventHandler('server:vault:open', function(choice)
-    TriggerClientEvent('openvault', -1, choice)
+RegisterServerEvent('miutil:item:give')
+AddEventHandler('miutil:item:give', function(source, item, amount)
+    Inventory:AddItem(source, item, amount)
 end)
+
