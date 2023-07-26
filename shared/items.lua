@@ -55,7 +55,6 @@ UT.vehicle = {
 }
 
 UT.divegear = {
-    scuba = true, -- let players swim better
     time = 150.00, -- sets new time for oxygen level in seconds
     restrict = false -- allow players to use gear while in water
 }

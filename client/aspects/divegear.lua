@@ -38,7 +38,7 @@ local systemon = function()
             equip.mask = mask
     
             SetEnableScuba(player, true)
-            SetPedMaxTimeUnderwater(player, 150.00)
+            SetPedMaxTimeUnderwater(player, UT.divegear.time)
             equip.used = true
         end
     end
@@ -76,7 +76,7 @@ local systemoff = function()
 end
 
 exports('divegear', function()
-    if Item.divegear.restrict then
+    if UT.divegear.restrict then
         if not equip.used then
             if IsPedSwimming(player) or IsPedSwimmingUnderWater(player) then
                 lib.notify({
@@ -118,7 +118,7 @@ exports('divegear', function()
                 systemoff()
             end
         else return end
-    elseif not Item.divegear.restrict then
+    elseif not UT.divegear.restrict then
         if not equip.used then
             systemon()
         elseif equip.used then
